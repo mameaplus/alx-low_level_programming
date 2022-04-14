@@ -1,19 +1,13 @@
-#include <unistd.h>
+#include <stdio.h>
 #include "main.h"
-
 /**
- * main - Check description
- * Description: It prints the word _putchar, followed by a new line.
- * Return: 0.
+ * main - prints the string "Holberton" from a character array.
+ * Return: 0 on success.
  */
 int main(void)
 {
-	char word[8] = "_putchar";
-	int i;
-
-	for (i = 0; i < 8; i++)
-		_putchar(word[i]);
-	_putchar('\n');
-
-	return (0);
+char n[9] = "_putchar";
+printf("%s", n);
+printf("\n");
+return (0);
 }

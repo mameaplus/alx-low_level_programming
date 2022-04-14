@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * jack_bauer - Check _putchar
+ * jack_bauer - Check ALX
  * Description: function prints every minute in one day
  * Return: Nothing
  */
