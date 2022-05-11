@@ -1,0 +1,20 @@
+CC = gcc
+SRC = main.c main.c
+OBJ = $(patsubst %.c,%.o, $(SRC))
+NAME = main
+RM = rm -f
+
+all: $(OBJ)
+	${CC} ${OBJ} -o ${NAME}
+
+clean:
+	${RM} *~ ${NAME}
+
+oclean:
+	${RM} ${OBJ}
+
+fclean:
+	${RM} *~ ${NAME}
+	${RM} ${OBJ}
+
+re: oclean all

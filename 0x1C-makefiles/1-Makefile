@@ -1,0 +1,6 @@
+CC = gcc
+
+SRC = main.c main.c
+
+all: ${SRC}
+	${CC} ${SRC} -o main

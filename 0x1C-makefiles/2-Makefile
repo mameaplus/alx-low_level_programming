@@ -1,0 +1,7 @@
+CC = gcc
+SRC = main.c main.c
+OBJ = $(patsubst %.c,%.o, $(SRC))
+NAME = main
+
+all: $(OBJ)
+	${CC} ${OBJ} -o ${NAME}
